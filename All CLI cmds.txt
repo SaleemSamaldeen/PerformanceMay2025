@@ -1,0 +1,22 @@
+jmeter -n -t C:\Jmeterscrits\webtour-flightbooking.jmx -l C:\Jmeterscrits\Results\05172025Log.jtl -e -o C:\Jmeterscrits\Reports
+
+
+jmeter -n -t C:\Users\salee\TestLeafJMeterPerformanceMay2025\WEBTOURS-RECORDING.jmx -l C:\Users\salee\TestLeafJMeterPerformanceMay2025\Results\17052025Log.jtl -e -o C:\Users\salee\TestLeafJMeterPerformanceMay2025\Reports
+
+
+796736dff1cc40f48f6d03d3e33c9c50
+
+- Add the command to run JMeter tests:
+C:\JmeterSoftware\apache-jmeter-5.5\apache-jmeter-5.5\bin\jmeter -n -t C:\Jmeterscrits\webtour-flightbooking.jmx -l C:\Jmeterscrits\Results\05172025Log.jtl -e -o C:\Jmeterscrits\Reports
+
+
+java -jar Jenkins.war
+
+
+Hi Dan , I tried merging two files, but not working. Instead of merging two files, Can we follow another approach - merge both flight booking and flight search jmx results (source: https://www.youtube.com/watch?v=Ome5x5PjTdo). Correct me if I'm wrong.
+
+And while generating html report from above aggregate result csv file, I got below error. I tried with chatgpt to fix this error, I opened jmeter.properties file, there are many true values, but no idea how to fix this.
+
+File 'C:\Users\salee\TestLeafJMeterPerformanceMay2025\FlightBookingaggregate.csv' does not contain the field names header, ensure the jmeter.save.saveservice.* properties are the same as when the CSV file was created or the file may be read incorrectly when generating report
+An error occurred: Mismatch between expected number of columns:17 and columns in CSV file:13, check your jmeter.save.saveservice.* configuration or check if line 2 in 'C:\Users\salee\TestLeafJMeterPerformanceMay2025\FlightBookingaggregate.csv' is complete
+
